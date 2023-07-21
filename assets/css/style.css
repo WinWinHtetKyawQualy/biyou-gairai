@@ -2538,22 +2538,33 @@ ul.clock-flex li:last-child {
   border-left: 1px solid #ada7a3;
 }
 .price-card{
+  display: table;
+  width: 100%;
   border-right: 1px solid #ada7a3;
+  border-bottom: 1px solid #ada7a3;
 }
 .price-card > div{
-  border-bottom: 1px solid #ada7a3;
   padding: 20px;
+  border-bottom: 1px solid #ada7a3;
+}
+.price-card > div:last-child{
+  border-bottom: none;
 }
 .price-card > div:not(.use){
   text-align: center;
 }
 .price-card > div.ttl{
+  padding: 20px 0;
   border-top: 1px solid #ada7a3;
 }
 .price-card > div img{
-  width: fit-content;
+  width: 154px;
+  height: 116px;
   margin: 0 auto;
 }
+/* .price-card > div.description{
+  text-align: left;
+} */
 @media screen and (max-width : 768px) {
 }
 /* cosmetic page end*/
