@@ -2548,12 +2548,18 @@ ul.clock-flex li:last-child {
 }
 
 .price-card{
+  display: table;
+  width: 100%;
   border-right: 1px solid #ada7a3;
+  border-bottom: 1px solid #ada7a3;
 }
 
 .price-card > div{
-  border-bottom: 1px solid #ada7a3;
   padding: 20px;
+  border-bottom: 1px solid #ada7a3;
+}
+.price-card > div:last-child{
+  border-bottom: none;
 }
 
 .price-card > div:not(.use){
@@ -2561,11 +2567,13 @@ ul.clock-flex li:last-child {
 }
 
 .price-card > div.ttl{
+  padding: 20px 0;
   border-top: 1px solid #ada7a3;
 }
 
 .price-card > div img{
-  width: fit-content;
+  width: 154px;
+  height: 116px;
   margin: 0 auto;
 }
 

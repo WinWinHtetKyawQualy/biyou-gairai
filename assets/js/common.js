@@ -140,3 +140,9 @@ modalOffbg.forEach((el) => {
     }
   });
 });
+
+$('.ttl').matchHeight();
+$('.img').matchHeight();
+$('.description').matchHeight();
+$('.price').matchHeight();
+$('.use').matchHeight();
