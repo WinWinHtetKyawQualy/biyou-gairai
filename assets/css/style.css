@@ -2534,6 +2534,7 @@ ul.clock-flex li:last-child {
   max-width: 840px;
   margin: 0 auto;
   padding: 50px 20px 80px;
+  font-size: 1.6rem
 }
 .cosmetic-container .price-container{
   display: grid;
@@ -2545,8 +2546,6 @@ ul.clock-flex li:last-child {
   border-left: 1px solid #ada7a3;
 }
 .price-card{
-  display: table;
-  width: 100%;
   border-right: 1px solid #ada7a3;
   border-bottom: 1px solid #ada7a3;
 }
@@ -2573,12 +2572,32 @@ ul.clock-flex li:last-child {
   text-align: left;
 } */
 @media screen and (max-width : 768px) {
+  .cosmetic-container .price-container{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .price-card:nth-child(3n+1){
+    border-left: none;
+  }
+  .price-card:nth-child(2n-1){
+    border-left: 1px solid #ada7a3;
+  }
   .cosmetic-mv .text-container{
     font-size: 1.6rem;
   }
 
   .cosmetic-mv .cos-mv-txt-block {
     padding: 35px 20px 0;
+  }
+}
+@media screen and (max-width : 500px) {
+  .cosmetic-container .price-container{
+    grid-template-columns: 1fr;
+  }
+  .price-card:nth-child(2n-1){
+    border-left: none;
+  }
+  .price-card{
+    border-left: 1px solid #ada7a3 !important;
   }
 }
 /* cosmetic page end*/
