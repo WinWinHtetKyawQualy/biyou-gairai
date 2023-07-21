@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+:root {
+    font-size: 10px;
+    scroll-behavior: smooth;
+    --base-color: #31231a;
+    --bg-theme: #f0fdff;
+    --main-theme: #fff;
+    --brown-h3: #7e5a3d;
+    --bg-gray: #fbfbfb;
+    --cyan: #00c6e3;
+    --text-brown: #7e5a3d;
+    --text-title: #7ddbe9;
+    --line-cyan: #bcebf2;
+    --text-num: #a5ebf6;
+    --logo: #997355;
+    --txt-pink: #fd77ab;
+    --cyan-h2: #cbf1f6;
+    --modal-bg: #000;
+    --mt-border: #99e8f4;
+    --cancel-modal: #f5a3be;
+}
+/* @font-face {
+    font-family: "Yu Mincho";
+    src: url("../font/yumincho-medium.otf") format("OpenType");
+} */
+@font-face {
+    font-family: "Yu Mincho";
+    src: url("../font/yumindb.ttf") format("TrueType");
+}
+
+html {
+    text-rendering: optimizeLegibility !important;
+}
+
+body {
+    font-family: "Yu Mincho", "Noto Sans JP", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.7;
+    letter-spacing: 0.32px;
+    color: var(--base-color);
+    background: #fff;
+    text-align: justify;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.pc {
+    display: block;
+}
+
+.sp {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .pc {
+        display: none;
+    }
+
+    .sp {
+        display: block;
+    }
+
+    body {
+        font-size: 1.2rem;
+    }
+}
+
+/* ===============================
+Text align
+=============================== */
+.txt-left {
+    text-align: left !important;
+}
+
+.txt-center {
+    text-align: center !important;
+}
+
+.txt-right {
+    text-align: right !important;
+}
+
+.txt-justify {
+    text-align: justify !important;
+}
+
+.txt-pink {
+    color: var(--txt-pink);
+}
+@media screen and (max-width: 768px) {
+    .txt-left-sp {
+        text-align: left;
+    }
+
+    .txt-center-sp {
+        text-align: center;
+    }
+    .txt-right-sp {
+        text-align: right;
+    }
+}
+
+/* ===============================
+Section container
+=============================== */
+.container {
+    max-width: 1396px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
