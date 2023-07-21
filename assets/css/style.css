@@ -2536,19 +2536,23 @@ ul.clock-flex li:last-child {
   padding: 50px 20px 80px;
   font-size: 1.6rem
 }
+
 .cosmetic-container .price-container{
   display: grid;
   grid-template-columns: repeat(3,1fr);
   row-gap: 50px;
 }
+
 .price-card:first-child,
 .price-card:nth-child(3n+1){
   border-left: 1px solid #ada7a3;
 }
+
 .price-card{
   border-right: 1px solid #ada7a3;
   border-bottom: 1px solid #ada7a3;
 }
+
 .price-card > div{
   padding: 20px;
   border-bottom: 1px solid #ada7a3;
@@ -2556,21 +2560,28 @@ ul.clock-flex li:last-child {
 .price-card > div:last-child{
   border-bottom: none;
 }
+
 .price-card > div:not(.use){
   text-align: center;
 }
+
 .price-card > div.ttl{
   padding: 20px 0;
   border-top: 1px solid #ada7a3;
 }
+
 .price-card > div img{
   width: 154px;
   height: 116px;
   margin: 0 auto;
 }
-/* .price-card > div.description{
-  text-align: left;
-} */
+
+@media screen and (max-width : 1200px) {
+  .cosmetic-mv .text-container {
+    left: 0;
+  }
+}
+
 @media screen and (max-width : 768px) {
   .cosmetic-container .price-container{
     grid-template-columns: repeat(2,1fr);
@@ -2587,6 +2598,11 @@ ul.clock-flex li:last-child {
 
   .cosmetic-mv .cos-mv-txt-block {
     padding: 35px 20px 0;
+  }
+
+  .cosmetic-mv .text-container {
+    left: 0;
+    padding: 0 20px;
   }
 }
 @media screen and (max-width : 500px) {
