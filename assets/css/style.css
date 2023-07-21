@@ -2523,6 +2523,37 @@ ul.clock-flex li:last-child {
   left: 50%;
   transform: translateY(-50%);
 }
+.cosmetic-container{
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 50px 20px 80px;
+}
+.cosmetic-container .price-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  row-gap: 50px;
+}
+.price-card:first-child,
+.price-card:nth-child(3n+1){
+  border-left: 1px solid #ada7a3;
+}
+.price-card{
+  border-right: 1px solid #ada7a3;
+}
+.price-card > div{
+  border-bottom: 1px solid #ada7a3;
+  padding: 20px;
+}
+.price-card > div:not(.use){
+  text-align: center;
+}
+.price-card > div.ttl{
+  border-top: 1px solid #ada7a3;
+}
+.price-card > div img{
+  width: fit-content;
+  margin: 0 auto;
+}
 @media screen and (max-width : 768px) {
 }
 /* cosmetic page end*/
