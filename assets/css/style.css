@@ -2535,32 +2535,46 @@ ul.clock-flex li:last-child {
   margin: 0 auto;
   padding: 50px 20px 80px;
 }
+
 .cosmetic-container .price-container{
   display: grid;
   grid-template-columns: repeat(3,1fr);
   row-gap: 50px;
 }
+
 .price-card:first-child,
 .price-card:nth-child(3n+1){
   border-left: 1px solid #ada7a3;
 }
+
 .price-card{
   border-right: 1px solid #ada7a3;
 }
+
 .price-card > div{
   border-bottom: 1px solid #ada7a3;
   padding: 20px;
 }
+
 .price-card > div:not(.use){
   text-align: center;
 }
+
 .price-card > div.ttl{
   border-top: 1px solid #ada7a3;
 }
+
 .price-card > div img{
   width: fit-content;
   margin: 0 auto;
 }
+
+@media screen and (max-width : 1200px) {
+  .cosmetic-mv .text-container {
+    left: 0;
+  }
+}
+
 @media screen and (max-width : 768px) {
   .cosmetic-mv .text-container{
     font-size: 1.6rem;
@@ -2568,6 +2582,11 @@ ul.clock-flex li:last-child {
 
   .cosmetic-mv .cos-mv-txt-block {
     padding: 35px 20px 0;
+  }
+
+  .cosmetic-mv .text-container {
+    left: 0;
+    padding: 0 20px;
   }
 }
 /* cosmetic page end*/
